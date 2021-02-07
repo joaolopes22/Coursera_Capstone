@@ -154,6 +154,11 @@
         },
         {
             "metadata": {},
+            "cell_type": "markdown",
+            "source": "Collecting the coordinates of the Neighbourhoods"
+        },
+        {
+            "metadata": {},
             "cell_type": "code",
             "source": "coord=pd.read_csv(\"http://cocl.us/Geospatial_data\")",
             "execution_count": 10,
@@ -224,6 +229,11 @@
         },
         {
             "metadata": {},
+            "cell_type": "markdown",
+            "source": "Creating two cluster, one with Neighbourhoods with Toronto in the name and other without"
+        },
+        {
+            "metadata": {},
             "cell_type": "code",
             "source": "complete[\"Cluster\"]=complete[\"Neighbourhood\"].str.contains(\"Toronto\", na=False)",
             "execution_count": 15,
@@ -272,6 +282,11 @@
             "source": "import folium",
             "execution_count": 19,
             "outputs": []
+        },
+        {
+            "metadata": {},
+            "cell_type": "markdown",
+            "source": "Creating a map to see the distribuition of the neighbourhoods and the clusters. In green we have the cluster with Toronto in the name and in red we have the others."
         },
         {
             "metadata": {},
